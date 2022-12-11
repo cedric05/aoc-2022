@@ -34,7 +34,6 @@ fn perform(input: &str) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-#[feature(iter_array_chunks)]
 fn puzzle2(input: &str) -> Result<(), Box<dyn Error>> {
     let file = BufReader::new(std::fs::OpenOptions::new().read(true).open(input)?);
     let score: u32 = file
